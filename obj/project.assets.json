@@ -12131,11 +12131,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/vitor/Projetos/MvcAdoDemo/MvcAdoDemo.csproj",
+      "projectUniqueName": "/home/vitor/Projetos/Crud-Ado.Net-PostgreSQL/MvcAdoDemo.csproj",
       "projectName": "MvcAdoDemo",
-      "projectPath": "/home/vitor/Projetos/MvcAdoDemo/MvcAdoDemo.csproj",
+      "projectPath": "/home/vitor/Projetos/Crud-Ado.Net-PostgreSQL/MvcAdoDemo.csproj",
       "packagesPath": "/home/vitor/.nuget/packages/",
-      "outputPath": "/home/vitor/Projetos/MvcAdoDemo/obj/",
+      "outputPath": "/home/vitor/Projetos/Crud-Ado.Net-PostgreSQL/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/share/dotnet/sdk/NuGetFallbackFolder"

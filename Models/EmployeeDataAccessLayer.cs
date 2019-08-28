@@ -51,7 +51,7 @@
             {    
                 using (NpgsqlConnection con = new NpgsqlConnection(connectionString))    
                 {    
-                    NpgsqlCommand cmd = new NpgsqlCommand("INSERT INTO public.tblemployee(name, city, department, gender) VALUES (@Name, @City, @Department, @Gender);", con);                        
+                    NpgsqlCommand cmd = new NpgsqlCommand("INSERT INTO tblemployee(name, city, department, gender) VALUES (@Name, @City, @Department, @Gender);", con);                        
                     //cmd.CommandType = CommandType.StoredProcedure;   
         
                     cmd.Parameters.AddWithValue("@Name", employee.Name);    
@@ -70,7 +70,7 @@
             {    
                 using (NpgsqlConnection con = new NpgsqlConnection(connectionString))    
                 {    
-                    NpgsqlCommand cmd = new NpgsqlCommand("UPDATE public.tblemployee SET name=@Name, city=@City, department=@Department, gender=@Gender WHERE employeeid=@EmpId;", con);    
+                    NpgsqlCommand cmd = new NpgsqlCommand("UPDATE tblemployee SET name=@Name, city=@City, department=@Department, gender=@Gender WHERE employeeid=@EmpId;", con);    
                     //cmd.CommandType = CommandType.StoredProcedure;    
         
                     cmd.Parameters.AddWithValue("@EmpId", employee.ID);    
@@ -116,7 +116,7 @@
         
                 using (NpgsqlConnection con = new NpgsqlConnection(connectionString))    
                 {    
-                    NpgsqlCommand cmd = new NpgsqlCommand("Delete tblemployee where id = @EmpId", con);    
+                    NpgsqlCommand cmd = new NpgsqlCommand("DELETE FROM tblemployee WHERE EmployeeID = @EmpId", con);    
                     //cmd.CommandType = CommandType.StoredProcedure;    
         
                     cmd.Parameters.AddWithValue("@EmpId", id);    
